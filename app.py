@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from transformers import SpeechT5Processor, SpeechT5ForTextToSpeech, SpeechT5HifiGan
+import warnings
+warnings.filterwarnings("ignore")
 import torch
 import soundfile as sf
 import numpy as np
